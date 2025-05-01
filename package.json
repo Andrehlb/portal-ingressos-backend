@@ -1,0 +1,29 @@
+{
+  "name": "portal-ingressos-backend",
+  "version": "1.0.0",
+  "description": "Backend for the Ticket Sales Portal. RESTful API built with Node.js and Express to manage clients, events, and tickets.",
+  "main": "index.js",
+  "scripts": {
+  "start": "node src/app.js",
+  "dev": "nodemon src/app.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrehlb/portal-ingressos-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrehlb/portal-ingressos-backend/issues"
+  },
+  "homepage": "https://github.com/Andrehlb/portal-ingressos-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
