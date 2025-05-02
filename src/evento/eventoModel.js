@@ -27,6 +27,7 @@ const pool = new Pool({
 
 // CREATE
 async function criar(dto) {
+    console.log('DEBUG DTO:', dto); // Adicionei um log para verificar o conteúdo do DTO
   const query = `
     INSERT INTO eventos (nome, tipo, data, hora, local, descricao, disponibilidade)
     VALUES ($1, $2, $3, $4, $5, $6, $7)
