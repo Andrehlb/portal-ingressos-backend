@@ -15,3 +15,7 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
+
+// Importando e utilizando as rotas de evento do file src/evento/eventoRoutes.js
+const eventoRoutes = require('./evento/eventoRoutes');
+app.use('/eventos', eventoRoutes);
