@@ -1,3 +1,5 @@
+// classe para representar um evento em memória, mas está desativada (comentada) porque agora estou usando banco de dados.
+
 /* class Evento {
     constructor(id, nome, tipo, data, local, disponibilidade) {
       this.id = id;
