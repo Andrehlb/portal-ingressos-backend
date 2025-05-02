@@ -1,5 +1,5 @@
 class EventoDTO {
-    constructor({ nome, tipo, data, local, disponibilidade }) {
+    constructor({ nome, tipo, data, local, hora, descricao, disponibilidade }) {
       this.nome = nome;
       this.tipo = tipo;
       this.data = data;
