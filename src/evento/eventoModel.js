@@ -28,7 +28,7 @@ const pool = new Pool({
 // CREATE
 async function criar(dto) {
   const query = `
-    INSERT INTO eventos (nome, tipo, data, hora, local, disponibilidade)
+    INSERT INTO eventos (nome, tipo, data, hora, local, descricao, disponibilidade)
     VALUES ($1, $2, $3, $4, $5, $6, $7)
     RETURNING *;
   `;
