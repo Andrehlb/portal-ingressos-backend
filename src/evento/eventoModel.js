@@ -28,15 +28,17 @@ const pool = new Pool({
 // CREATE
 async function criar(dto) {
   const query = `
-    INSERT INTO eventos (nome, tipo, data, local, disponibilidade)
-    VALUES ($1, $2, $3, $4, $5)
+    INSERT INTO eventos (nome, tipo, data, hora, local, disponibilidade)
+    VALUES ($1, $2, $3, $4, $5, $6, $7)
     RETURNING *;
   `;
   const values = [
     dto.nome,
     dto.tipo,
     dto.data,
+    dto.hora,
     dto.local,
+    dto.descricao,
     dto.disponibilidade,
   ];
   const result = await pool.query(query, values);
